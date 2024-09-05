@@ -1,0 +1,140 @@
+/* General App Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  background: rgba(12, 12, 12, 0.9); /* Dark semi-transparent background */
+  min-height: 100vh;
+}
+h1{
+  color: white;
+}
+
+.expense-tracker {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9); /* Light semi-transparent white */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* Layout for First Row: Transaction Form and Summary */
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the two sections */
+  margin-bottom: 30px;
+}
+
+.transaction-form,
+.summary {
+  width: 48%; /* Adjusted width to fit comfortably within the row */
+  border-radius: 10px;
+}
+
+/* Transaction Form Styles */
+.transaction-form {
+  background: rgba(72, 30, 20, 0.8); /* Semi-transparent brown background */
+  padding: 20px;
+  border: 2px solid rgba(242, 97, 63, 0.7);
+}
+
+.transaction-form h3 {
+  margin-bottom: 15px;
+  color: #F2613F; /* Bright accent color */
+}
+
+.transaction-form input,
+.transaction-form select,
+.transaction-form button {
+  width: 95%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(155, 57, 34, 0.7);
+  border-radius: 5px;
+}
+
+.transaction-form button {
+  background: #F2613F; /* Accent button color */
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-form button:hover {
+  background: #9B3922; /* Darker color on hover */
+}
+
+/* Summary Styles */
+.summary {
+  background: rgba(72, 30, 20, 0.8); /* Semi-transparent brown background */
+  padding: 20px;
+  border: 2px solid rgba(242, 97, 63, 0.7);
+  text-align: left;
+}
+
+.summary h3 {
+  margin-bottom: 15px;
+  color: #F2613F; /* Bright accent color */
+}
+
+.summary p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #ffffff; /* Text color */
+}
+
+.summary p.income {
+  color: #F2613F; /* Income color */
+}
+
+.summary p.expenses {
+  color: #F2613F; /* Expenses color */
+}
+
+.summary p.balance {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Second Row: Transaction List */
+.transaction-list {
+  background: rgba(255, 255, 255, 0.9); /* Light semi-transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(242, 97, 63, 0.7);
+}
+
+.transaction-list h3 {
+  margin-bottom: 15px;
+  color: #F2613F; /* Bright accent color */
+}
+
+.transaction-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-list li.income {
+  background: rgba(242, 97, 63, 0.2); /* Light transparent income background */
+  color: #F2613F; /* Income color */
+}
+
+.transaction-list li.expense {
+  background: rgba(155, 57, 34, 0.2); /* Light transparent expense background */
+  color: #9B3922; /* Expense color */
+}
